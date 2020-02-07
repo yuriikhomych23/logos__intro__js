@@ -59,20 +59,20 @@
 // parseInt витягує тільки ціле число 
 // parseFloat витягує дробове число 
 
-let hello = 'Hello ';
-let name = 'Yurii';
-let color = prompt('write a text color');
-let size = prompt('text size');
-let width = prompt('write width');
-let height = prompt('write height');
-let widthBorder = prompt('write width border');
-let styleBorder = prompt('write style border')
-let backgroundColor = prompt('write background color')
+// let hello = 'Hello ';
+// let name = 'Yurii';
+// let color = prompt('write a text color');
+// let size = prompt('text size');
+// let width = prompt('write width');
+// let height = prompt('write height');
+// let widthBorder = prompt('write width border');
+// let styleBorder = prompt('write style border')
+// let backgroundColor = prompt('write background color')
 
 // document.write(hello + name + ' ! some text');
 // document.write(`${hello} ${name}! dsvvvvvvvvda`);
 
-document.write(`<p style='color: ${color}; font-size:${size}px'>${hello} <b>${name}</b></p>`);
+// document.write(`<p style='color: ${color}; font-size:${size}px'>${hello} <b>${name}</b></p>`);
 
 // document.write('<p>')
     // document.write(hello)
@@ -90,6 +90,147 @@ document.write(`<p style='color: ${color}; font-size:${size}px'>${hello} <b>${na
 //6. колір бекграунду
 
 
-document.write(`<div style="width: ${w}px; height: ${h}px; border: ${wBorder}px ${sBorder}px ${}px"`)
+// document.write(`<div style="width: ${w}px; height: ${h}px; border: ${wBorder}px ${sBorder}px ${}px"`)
 
 
+
+//Lesson 2........................................................................
+
+// JS Оператори 
+// +, -, /, *, % остача від ділення
+
+//оператори рівності
+// = присвоєння, == перевірка значення, === строга перевірка, ! (не),
+//!=(не дорівнює), !==(не дорівнює по типу)
+
+// >, <, >= , <=, &&(і), ||(або), &, |(перевіряється один і інший)
+
+// let a = 1;
+// a++; // a = a+1; інкремент 
+//++a (інкремент) --а (декремент)
+
+// let i = 1;
+// let j = i++;
+// console.log(i);
+// console.log(j);
+
+// let a = 1;
+// let b = ++a;
+// console.log(a);
+// console.log(b);
+
+
+// n *= i; скорочений синтаксис
+// n = n*i; 
+
+
+// для створення умови 
+// if (умова) якщо умова справджується виконується тіло умови {тіло умови}
+// else {у всіх інших випадках}
+
+
+// let age = prompt('Скільки років');
+
+// if(age >= 18) {
+//     alert('Ласкаво просимо');
+// } else {
+//     alert('Допобачення');
+// }
+
+
+// if(age > 21 || age == 21) {
+//     console.log('Ласкаво просимо')
+// } else {
+//     console.log('Допобачення')
+// }
+
+// if(age >= 21) { 
+//     console.log('Ласкаво просимо')
+// } else if(age == 20)  {
+//      console.log('Почекай ще рочок')
+// } else {
+//     console.log('Допобачення')
+// }
+
+
+// let age = prompt('Скільки років?');
+
+// if(age >= 21) {
+//     let check = confirm('З вас 200 грн за вхід') 
+//     if(check) { 
+//         console.log('Ласкаво просимо')
+//     } else {
+//         console.log('Заходьте іншим разом')
+//     }
+// } else {
+//     console.log('Вибачте вам ще зарано')
+// }
+
+
+// let login = 'Admin';
+// let password = 1111;
+
+// let signLogin = prompt('Enter Login');
+// let signPassword = prompt('Your Password');
+
+// if(signLogin == login || signPassword == password) { 
+//     console.log(`Ласкаво просимо ${login}`)
+// } else {
+//     console.log('Логін або пароль не вірний')
+// }
+
+
+
+
+// let flat = prompt('Введіть номер квартири');
+
+// if (flat >= 1 && <= 20) {
+//     console.log('Підїзд №1')
+// } else if (flat <= 48) {
+//     console.log('Підїзд №2')
+// } else if (flat <= 90) {
+//     console.log('Підїзд №3')
+// } else if (flat == '') {
+//     console.log('Введіть номер квартири')
+// } else if (flat == null){
+//     console.log('Ви скасували пошук')
+// } else { 
+//     console.log('Такої квартири не існує')
+// }
+
+
+
+//тернарний оператор
+// let age = prompt('Write age');
+
+// let correct = age >= 18 ? true : false;
+
+// alert(correct);
+
+
+let admin = 'admin';
+let user = 'user';
+let pro = 'pro';
+
+
+let passAdmin = 1111;
+let passUser = 2222;
+let passPro = 3333;
+
+
+
+let name = prompt('Write your status');
+let password = prompt('Write your password');
+
+if (name == admin && password == passAdmin) {
+    document.write(`<div style="width: 300px; height: 300px; background-color: red;
+    margin: 100px auto"> Welcome ${admin}</div>`)
+} else if ( name == user && password == passUser) {
+    document.write(`<div style="width: 300px; height: 300px; background-color: blue;
+    margin: 100px auto"> Welcome ${user}</div>`)
+}  else if ( name == pro && password == passPro) {
+    document.write(`<div style="width: 300px; height: 300px; background-color: green;
+    margin: 100px auto"> Welcome ${pro}</div>`)
+} else {
+    alert('Wrong pass or name')
+}
