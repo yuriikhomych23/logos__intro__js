@@ -344,3 +344,160 @@
 
 
 
+
+// LESSON 4 WHILE ЦИКЛ
+
+// while цикл з передумовою
+
+// while(умова){тіло циклу}
+
+// let ask = prompt('Найкращий український боксер 2019 року');
+
+// while(ask != 'Ломаченко') {
+//     ask = prompt('Найкразий український боксер 2019 року');
+// }
+
+// цикл в циклі
+// let i = 1, j;
+
+// while( i <= 10) {
+//     document.write(`<h2>Outside loop ${i}</h2>`);
+//     j =1;
+//     while(j <= 5) {
+//         document.write(`<p>Inside loop ${j}</p>`);
+//         j++;
+//     } 
+//     i++;
+// }
+
+
+// do {
+
+// }
+// while(умова)
+
+
+// let i = 0;
+
+// do {
+//     console.log(i)
+//     i++;
+// }
+// while (i <= 3);
+
+
+
+// let num = +prompt('Введіть число');
+
+
+// while(num != 0) {
+//     num = +prompt('Введіть число');
+//     num = num + num;
+
+// console.log(num);
+// }
+
+
+
+//сума середнє арефметичне і кількість введень
+// let ask;
+
+// let count = 0;
+
+// let result = 0;
+
+// while(ask != 0) { 
+//     ask = +prompt('Введіть число')
+//     result = result + ask;
+    
+//     if(ask == 0) {
+//         let serAref = result/count;
+//         console.log(serAref)
+//         console.log(count)
+//     }
+//     count++;
+// }
+// console.log(result)
+
+
+
+// let  ask = prompt('Введіть кількість зірочок');
+// let ask2;
+// let count = 0;
+// let star = '*';
+
+// while(ask != count) {
+//     count = ask + star;
+//     ask2 = prompt('Горизонтально чи вертикально')
+
+//     if ( ask2 = true) {
+//         document.write(`<p>Outside loop ${count}<br></p>`);
+//     }
+// }
+
+
+
+
+//виводить кількість відємних значень
+// let i = 1;
+// let count = 0;
+// while(i <= 5) {
+//     let ask = +prompt('Number')
+//     if(ask < 0) {
+//         count++;
+//     }
+//     i++;
+// }
+
+// console.log(count)
+
+
+//кількість символів 
+// let stars = +prompt('Count of  stars')
+// let direction = +prompt('Якщо по горизонталі введіть 1, по вертикалі 2');
+
+// let i = 1;
+// while(i <= stars) {
+//     if(direction == 1) {
+//         document.write('<span>*</span>')
+//     } else if(direction == 2) {
+//         document.write('<p>*</p>')
+//     }
+//     i++;
+// }
+
+
+//break continue 
+// for (let i = 1; i <= 10; i++) {
+//     if(i % 2 == 0) {
+//         continue
+//     } 
+//     console.log(i)
+// }
+
+
+//мітки
+// exit:{
+//     for(let i = 1; i < 8; i++) {
+//         document.write(`<h2>Outside loop ${i} </h2>`)
+//         for(let j = 1; j < 6; j++) {
+//             if(j == 3) {
+//                 break exit 
+//             }
+//             document.write(`<p>Inside loop ${j} </p>`)
+//         }
+//     }
+// }
+
+
+
+// let star;
+
+
+
+//     while (star == true) {
+//         star = confirm('Це?')
+//         document.write(`<p>*</p>`)
+//     } 
+// }
+
