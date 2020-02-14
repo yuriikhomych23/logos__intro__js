@@ -491,13 +491,155 @@
 
 
 
-// let star;
 
 
+//switch case 
 
-//     while (star == true) {
-//         star = confirm('Це?')
-//         document.write(`<p>*</p>`)
-//     } 
+// switch(значення) {
+//     case ідентифікатор :
+//         дія
+//         break
+//     case : 
+//         дія   
 // }
 
+
+// let country = prompt('Write country car');
+
+// switch(country) {
+//     case 'germany':
+//         console.log('Audi', 'Mercedes', 'BMW');
+//         break;
+//     case 'france':
+//         console.log('Renault', 'Citroen');
+//         break;
+//     case'italy' :
+//         console.log('ferrari', 'maserati', 'fiat');
+//         break;
+//     case 'japan': 
+//         console.log('subaru', 'honda', 'toyota', 'nissan');
+//         break;
+//     default:
+//         console.log('i dont know this country');
+//         break;
+// }
+
+
+
+
+//FUNCTION
+
+// FUNCTION DECLARATION, FUNCTION Expression, ARROW FUNCTION
+
+// function sayHello(){
+//     console.log('Hello Ivan');
+// }
+// sayHello();
+
+
+// function sayHello(name){
+//     console.log(`Hello ${name}`);
+// }
+// sayHello('Ivan');
+
+//function declaration можна викликати навіть перед створенням
+
+
+
+
+// function sayHello(name, lastName){
+//     console.log(`Hello ${name} ${lastName}`);
+// }
+// for(let i = 0; i < 3; i++) {
+//     let nameAsk = prompt('Write your name');
+//     let lastNameAsk = prompt('Write your lastname ')
+//     sayHello(nameAsk, lastNameAsk);
+// }
+
+
+
+//старіший метод написання функції
+//за замовчуванням default значення
+// function profile(firstName, secondName) {
+//     firstName = firstName || 'Guest'
+//     secondName = secondName || 'Вітаємо'
+//     console.log(`${firstName} - ${secondName}`)
+// }
+
+// profile('Oleg', 'Olegovych');
+// profile('Oleg');
+// profile();
+
+
+
+//новіший синтаксис
+// function profile(firstName = 'Guest', secondName = 'User') {
+//     console.log(`${firstName} - ${secondName}`)
+// }
+
+// profile('Oleg', 'Olegovych');
+// profile('Oleg');
+// profile();
+
+
+
+// function sumaAB(a, b) {
+//     let result = a + b;
+
+//     return result;
+// }
+// let suma = sumaAB(5, 15);
+// console.log(suma)
+
+
+
+// function f1(a, b, c) {
+//     console.log(a)
+//     console.log(b)
+//     console.log(c)
+//     console.log(arguments)
+//     for(let i = 0; i < arguments.length; i++) {
+//         console.log(arguments[i])//виводить кількість елементів
+//     }
+// }
+
+// f1(4,5,6,7) //виведе тільки перші три елементи
+
+
+
+//виводить не вказаний елемент
+// function f1(a, b, c, ...arg) {
+//     console.log(a)
+//     console.log(b)
+//     console.log(c)
+//     console.log(arg)
+
+// }
+
+// f1(4,5,6,7)
+
+
+
+//число в додатній мінусовій і нульовій степені
+// let num = +prompt('number1')
+// let step = +prompt('number2')
+
+// console.log(pow(num, step))
+
+// function pow(num, step) {
+//     let result = 1;
+//     let checker = false;
+
+// if(step < 0) {
+//     step = -step;
+//     checker = true;
+
+// }
+
+//     for(let i = 1; i < step; i++) {
+//         result = result * num;
+//     }
+
+//     if(checker) return 1/result
+//     else return result;
+// }
