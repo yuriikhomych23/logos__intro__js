@@ -77,10 +77,10 @@
 // document.write(`<p style='color: ${color}; font-size:${size}px'>${hello} <b>${name}</b></p>`);
 
 // document.write('<p>')
-    // document.write(hello)
-        // document.write('<b>')
-        // document.write(name)
-    // document.write('</b>')
+// document.write(hello)
+// document.write('<b>')
+// document.write(name)
+// document.write('</b>')
 // document.write('</p>')
 
 
@@ -409,7 +409,7 @@
 // while(ask != 0) { 
 //     ask = +prompt('Введіть число')
 //     result = result + ask;
-    
+
 //     if(ask == 0) {
 //         let serAref = result/count;
 //         console.log(serAref)
@@ -643,3 +643,150 @@
 //     if(checker) return 1/result
 //     else return result;
 // }
+
+
+//область видимості
+// let a = 20;
+
+// function sayHello(a) {
+//     a = 15;
+//     console.log(a)
+// }
+// sayHello(222);
+// console.log(a);
+// виведеться спочатку 15 а потім 20 !!!!!!!!!!!!!!!!! запамятати
+
+
+
+
+//FUNCTION EXPRESION
+
+// let sayHello = function(a) {
+//     console.log('Hello ' + a);
+// }
+// sayHello('Yurii'); 
+//викликати тільки після створення функції
+
+
+//ARROW FUNCTION
+
+//КОЛИ ОДИН ПАРАМЕТР ЙОГО МОЖНА НЕ БРАТИ В ДУЖКИ
+//ЯКЩО БІЛЬШЕ ОДНОГО ПОТРІБНО БРАТИ В ДУЖКИ 
+//Викликати теж тільки піля створення 
+//ЯКЩО ОДНА СТРІЧКА КОДУ В ТІПІ ФУНКЦІЇ ТО НЕ ПОТІРБНО ПРОПИСУВАТИ {}!!!! 
+
+// let sayHello = a => console.log('Hello ' + a);
+
+// sayHello('Ivan');
+
+//function declaration
+// function getId(id) {
+//     return id;
+// }
+
+
+// //fucntion expression
+// let getId = function(id) {
+//     return id;
+// }
+
+//arrow function 
+// let getId = id => {
+//     console.log('work');
+//     return id;
+// }
+
+
+// let sayHello = (name, secondName) => name + ' ' + secondName;
+// console.log(sayHello('Ivan', 'Ivanov')) 
+
+
+
+//РЕКУРСІІЯ - ФУКНЦІЯ ЯКА ВИКЛИКАЄ САМА СЕБЕ 
+//без рекурсії
+// function f(a, b) {
+//     let result = 1;
+//     for(let i = 0; i < b; i++) {
+//         result *= a;
+//     }
+//     return result;
+// }
+
+// console.log(f(3, 5))
+
+
+// РЕКУРСІЯ
+//СТЕПІНЬ
+// function f(a, b) {
+//     return (b != 0) ? a*f(a, b - 1) : 1;
+// }
+// console.log(f(3, 3))
+
+
+
+//factorial
+// let input = +prompt('Write a number');
+// function factorial(x) {
+//     if(x <= 1) {
+//         return 1;
+//     }
+//     return x*factorial(x - 1); 
+// }
+// console.log(`factorial ${input}: ${factorial(input)}`);
+
+
+
+//ЗАМИКАННЯ- ФУНКЦІЯ З ВСІМА ЗОВНІШНІМИ ПАРАМЕТРАМИ ЯКІ СХОДЯТЬСЯ В ОДНІЙ ФУНКЦІЇ І ЇЇ УМОВНО ЗАМИКАЄ
+
+// function f(a) {
+//     return function(b) {
+//         return a + b;
+//     }
+// }
+// console.log(f(5)(2))
+
+
+// function f() {
+//     let key = 0;
+//     return function() {
+//         key++;
+//         return key;
+//     }
+// }
+// let count = f();
+// console.log(count());
+// console.log(count());
+// console.log(count());
+// console.log(count());
+// console.log(count());
+
+
+
+//task
+// функція для перевірки віку
+// function checkAge(age) {
+//     if( age > 18) return true;
+//     else return confirm('Чи дозволили ваші батьки вам тут знаходитись');
+// }
+
+// let askAge = +prompt('Введіть ваш вік');
+
+// if (checkAge(askAge)) console.log('Вхід дозволено');
+// else(console.log('Вхід заборонено'));
+
+
+
+//виведення простих чисел 
+// function simpleNumbers(a, b) {
+//     for (let i = a; i <= b; i++) {
+//         let j;
+//         for(j = 2; j < b; j++) {
+//             if(i % j == 0) {
+//                 break;
+//             }
+//         }if(i == j) console.log(i)
+//     } 
+// }
+
+// simpleNumbers(10, 1000);
+
